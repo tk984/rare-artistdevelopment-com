@@ -1,19 +1,21 @@
 /* General Styling */
 :root {
-    --primary-color: #000;
-    --light-bg: #f8f9fa;
-    --text-muted: #6c757d;
+    --primary-color: #001d3d;
+    --light-bg: #f0f4ff;
+    --text-muted: #343639;
+    --accent-yellow: #ffc300;
+    --gunmetal: #343639;
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #343639;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #000;
+    color: #001d3d;
     letter-spacing: -0.5px;
 }
 
@@ -62,34 +64,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-dark {
-    background-color: #000;
-    border-color: #000;
+    background-color: #001d3d;
+    border-color: #001d3d;
 }
 
 .btn-dark:hover {
-    background-color: #333;
-    border-color: #333;
+    background-color: #ffc300;
+    border-color: #ffc300;
+    color: #001d3d;
 }
 
 .btn-outline-dark {
-    color: #000;
-    border-color: #000;
+    color: #001d3d;
+    border-color: #001d3d;
 }
 
 .btn-outline-dark:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffc300;
+    border-color: #ffc300;
+    color: #001d3d;
 }
 
 /* Cards */
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     border-radius: 8px;
+    border: 2px solid #e8eef7;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(0, 29, 61, 0.15) !important;
+    border-color: #ffc300;
 }
 
 .card-body {
@@ -102,9 +108,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Promise Container */
 .promise-container {
-    border: 1px solid #ddd !important;
+    border: 2px solid #001d3d !important;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 29, 61, 0.05);
     width: 100%;
     max-width: 75%;
 }
@@ -126,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 .icon-circle {
     width: 60px;
     height: 60px;
-    background-color: #333;
+    background-color: #001d3d;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -134,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.75rem;
-    color: #fff;
+    color: #ffc300;
 }
 
 /* Sections */
@@ -158,6 +164,23 @@ section h3 {
     padding: 0.5rem 1rem;
     font-weight: 700;
     border-radius: 4px;
+}
+
+/* Check badges for WHO WE WORK WITH section */
+.badge.bg-success {
+    background-color: #001d3d !important;
+    color: #ffc300;
+}
+
+/* Badges for WHAT MAKES US DIFFERENT section */
+.badge.bg-dark {
+    background-color: #001d3d !important;
+    color: #ffc300;
+}
+
+/* Check circle icons styling */
+.bi-check2-circle {
+    color: #001d3d;
 }
 
 /* Footer styles removed (social links not used) */
@@ -196,12 +219,12 @@ section h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #001d3d;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #343639;
 }
 
 /* Animation for fade-in */
@@ -259,23 +282,23 @@ section {
 
 .flip-card-front {
     background-color: #fff;
-    color: #000;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #001d3d;
+    border: 2px solid #001d3d;
+    box-shadow: 0 4px 12px rgba(0, 29, 61, 0.1);
 }
 
 .flip-card-back {
-    background-color: #000;
+    background-color: #001d3d;
     color: #fff;
     transform: rotateY(180deg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 29, 61, 0.2);
     overflow-y: auto;
     justify-content: flex-start;
     padding-top: 1.5rem;
 }
 
 .flip-card-front h3 {
-    color: #000;
+    color: #001d3d;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -284,13 +307,13 @@ section {
     font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #000;
+    color: #ffc300;
 }
 
 .flip-card-front .description {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #666;
+    color: #343639;
 }
 
 .flip-card-back h4 {
@@ -457,7 +480,7 @@ section {
 
 .modal-header {
     border-bottom: 1px solid #efefef;
-    background-color: #f8f9fa;
+    background-color: #f0f4ff;
 }
 
 .instagram-embed-container {
@@ -484,7 +507,7 @@ section {
 .carousel-control-next-icon {
     width: 30px;
     height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 29, 61, 0.7);
     border-radius: 50%;
     padding: 20px;
 }
@@ -499,11 +522,11 @@ section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ddd;
+    background-color: #c9d4e8;
     border: none;
     margin: 0 5px;
 }
 
 .carousel-indicators .active {
-    background-color: #262626;
+    background-color: #ffc300;
 }
