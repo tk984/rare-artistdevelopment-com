@@ -350,7 +350,7 @@ section {
 }
 
 .section-subtitle {
-    color: #8e8e8e;
+    color: #6c757d;
     margin-bottom: 50px;
 }
 
@@ -361,7 +361,7 @@ section {
 }
 
 .instagram-profile-card .card {
-    border: 1px solid #dbdbdb;
+    border: 1px solid #ddd;
     border-radius: 12px;
     height: 100%;
     background: white;
@@ -412,7 +412,7 @@ section {
 }
 
 .stat-item small {
-    color: #8e8e8e;
+    color: #6c757d;
     font-size: 0.85rem;
 }
 
@@ -457,7 +457,7 @@ section {
 
 .modal-header {
     border-bottom: 1px solid #efefef;
-    background-color: #fafafa;
+    background-color: #f8f9fa;
 }
 
 .instagram-embed-container {
@@ -465,7 +465,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 400px;
-    background-color: #fafafa;
+    background-color: #f8f9fa;
 }
 
 /* Carousel Customization */
@@ -499,7 +499,7 @@ section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #dbdbdb;
+    background-color: #ddd;
     border: none;
     margin: 0 5px;
 }

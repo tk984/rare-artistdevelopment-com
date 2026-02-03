@@ -785,8 +785,12 @@
                     <h2 class="mb-4">LET'S BUILD YOUR SUCCESS TOGETHER</h2>
                     <p class="lead mb-5 text-muted">Take the first step towards transforming your social media presence. Book a 15-minute discovery call and let's discuss your goals.</p>
                     <div class="d-flex gap-3 justify-content-center">
-                        <a href="#" class="btn btn-dark btn-lg">SCHEDULE YOUR CALL</a>
-                        <a href="#" class="btn btn-outline-dark btn-lg">LEARN MORE</a>
+                        <button type="button" class="btn btn-dark btn-lg"
+                           data-cal-link="tk-rare-artistdevelopment/discovery-call"
+                           data-cal-namespace="discovery-call"
+                           data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                            SCHEDULE YOUR CALL
+                        </button>
                     </div>
                 </div>
             </div>
@@ -865,7 +869,18 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script async src="//www.instagram.com/embed.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Cal element-click embed code -->
+        <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
+        Cal("init", "discovery-call", {origin:"https://app.cal.eu"});
+
+        Cal.ns = Cal.ns || {};
+        Cal.ns["discovery-call"] = Cal.ns["discovery-call"] || function(){};
+        Cal.ns["discovery-call"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+
+        <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
